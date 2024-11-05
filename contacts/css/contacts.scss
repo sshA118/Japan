@@ -32,9 +32,7 @@ body{
     height: 90vh;
     @media (max-width:376px) {
         height: 115vh;
-        
     }
-
 }
 .preloader {
     position: fixed;
@@ -47,8 +45,6 @@ body{
     z-index: 100911;
     display: flex;
 }
-
-
 @keyframes trans {
 	0% {
 		animation-timing-function: ease-in;
@@ -104,7 +100,7 @@ body{
         animation: trans 1s ease 0s 1 normal backwards;
     }
     &-2{
-        // animation:preloader-rotate 2s ease 0s 700 normal backwards;
+
         animation: trans 1s ease 1s 1 normal backwards;
         position: relative;
         top: 50%;
@@ -112,7 +108,6 @@ body{
         font-family: 'Courier New', Courier, monospace;
     }
     &-3{
-        // animation:preloader-rotate 2s ease 0s 700 normal backwards;
         animation: trans 1s ease 2s 1 normal backwards;
         position: relative;
         top: 50%;
@@ -120,7 +115,6 @@ body{
         font-family: 'Courier New', Courier, monospace;
     }
     &-4{
-        // animation:preloader-rotate 2s ease 0s 700 normal backwards;
         animation: trans 1s ease 3s 1 normal backwards;
         position: relative;
         top: 50%;
@@ -128,7 +122,6 @@ body{
         font-family: 'Courier New', Courier, monospace;
     } 
     &-5{
-        // animation:preloader-rotate 2s ease 0s 700 normal backwards;
         animation: trans 1s ease 4s 1 normal backwards;
         position: relative;
         top: 50%;
@@ -136,7 +129,6 @@ body{
         left: 50%;
     }
     &-6{
-        // animation:preloader-rotate 2s ease 0s 700 normal backwards;
         animation: trans 1s ease 5s 1 normal backwards;
         position: relative;
         top: 50%;
@@ -144,7 +136,6 @@ body{
         left: 50%;
     } 
     &-7{    
-        // animation:preloader-rotate 2s ease 0s 700 normal backwards;
         animation: trans 1s ease 6s 1 normal backwards;
         position: relative;
         top: 50%;
