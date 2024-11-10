@@ -1,14 +1,14 @@
 
 /////////////////////////////////////////////////////SLAIDER
 let url2 = ['0',
-            './image/jij.png',
-            './image/Rainbow.jpg',
-            './image/Building-Japan-Wallpaper.png',
-            './image/fon.png',
-            './image/fonstola.jpg',
-            './image/fonstola.ru_167395.jpg',
-            './image/tokio_noch.jpg',
-            './image/tokyo-goroda.jpg',
+            './index/image/jij.png',
+            './index/image/Rainbow.jpg',
+            './index/image/Building-Japan-Wallpaper.png',
+            './index/image/fon.png',
+            './index/image/fonstola.jpg',
+            './index/image/fonstola.ru_167395.jpg',
+            './index/image/tokio_noch.jpg',
+            './index/image/tokyo-goroda.jpg',
         ]
 let btn = document.getElementById('btn')
 let btn1 = document.getElementById('btn1')
