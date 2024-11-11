@@ -3,14 +3,6 @@
   src: url(../fonts/BadScript-Regular.ttf);
   font-weight: 500;
 }
-@keyframes myAnim {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -134,6 +126,13 @@ body {
   left: 50%;
 }
 .preloader__text-7 {
+  animation: trans 1s ease 6s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Courier New", Courier, monospace;
+}
+.preloader__text-8 {
   animation: trans 1s ease 6s 1 normal backwards;
   position: relative;
   top: 50%;

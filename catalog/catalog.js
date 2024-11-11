@@ -1,3 +1,40 @@
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    },500);
+}
+urlMoc = 'https://672a07666d5fa4901b6f7076.mockapi.io/card/'
+
+let h3 = document.getElementById('h1')
+
+let textp = document.getElementById('textP')
+
+let img = document.getElementById('img')
+let p = document.getElementById('p') 
+let request = new XMLHttpRequest();
+request.open("GET", urlMoc);
+request.responseType = "json";
+request.onload = function() {
+    let jsin = textContent = request.response;
+    for(let j = 0;j < 10;j++){
+        h3 = document.getElementById(`h${j}`)
+        textp = document.getElementById(`textP${j}`)
+        p = document.getElementById(`p${j}`)
+        // document.getElementById("Mydiv").appendChild(p);
+        // p.id = 'adres'
+        // p = document.getElementById(`adres${j}`)
+        h3.innerText = jsin[j].title
+        textp.innerHTML = jsin[j].text
+        p.innerHTML = jsin[j].adress
+       
+        
+    }
+};
+request.send();
+
+
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('search').addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
@@ -108,3 +145,5 @@ function filterCatalog(category) {
         }
     });
     }   
+
+    

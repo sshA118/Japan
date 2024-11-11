@@ -11,6 +11,119 @@
     opacity: 0;
   }
 }
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #e0e0e0;
+  z-index: 100911;
+  display: flex;
+}
+
+@keyframes trans {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(68px);
+  }
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(32px);
+  }
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(8px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+}
+.preloader__text {
+  position: relative;
+  display: flex;
+}
+.preloader__text-1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Courier New", Courier, monospace;
+  animation: trans 1s ease 0s 1 normal backwards;
+}
+.preloader__text-2 {
+  animation: trans 1s ease 1s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Courier New", Courier, monospace;
+}
+.preloader__text-3 {
+  animation: trans 1s ease 2s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Courier New", Courier, monospace;
+}
+.preloader__text-4 {
+  animation: trans 1s ease 3s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Courier New", Courier, monospace;
+}
+.preloader__text-5 {
+  animation: trans 1s ease 4s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  font-family: "Courier New", Courier, monospace;
+  left: 50%;
+}
+.preloader__text-6 {
+  animation: trans 1s ease 5s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  font-family: "Courier New", Courier, monospace;
+  left: 50%;
+}
+.preloader__text-7 {
+  animation: trans 1s ease 6s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Courier New", Courier, monospace;
+}
+.preloader__text-8 {
+  animation: trans 1s ease 7s 1 normal backwards;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;

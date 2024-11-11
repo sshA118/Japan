@@ -30,6 +30,9 @@
         <h2 class="preloader__text-7">
             g
         </h2>
+        <h2 class="preloader__text-8">
+            ...
+        </h2>
 
       </div>
     <div class="modal__windows " id="modalWindows" >
@@ -46,13 +49,13 @@
                 </label>
                 <label for="telephone" >
                     Ваш номер телефона:*
-                    <input type="tel" class="modal__input" placeholder="+7 1234567" pattern="[0-9][0-9]{3}[0-9]{4}" name="telephone">
+                    <input type="tel" class="modal__input" placeholder="+7 123 4567 09 89" pattern="[0-9][0-9]{3}[0-9]{4}" name="telephone">
                 </label>
                 <label for="age">Возраст:  <input class="modal__input" type="number" max="99" min="10"></label>
                 <label for="ask">Как мы можем помочь Вам?*<input class="modal__input" type="text" name="ask" ></label>
                 <div class="modal__windows__button">
-                    <button class="modal__windows__button-1">Закрыть</button>
-                    <button class="modal__windows__button-2" id="">Отправть</button>
+                    <button class="modal__windows__button-1" type="button"  id="close" onclick="modalClose()" >Закрыть</button>
+                    <button class="modal__windows__button-2"type="button" id="send" onclick="modalSend()" >Отправть</button>
                 </div>
             </form>
         </div>
@@ -175,7 +178,7 @@
             <h4>Подписка на рассылку</h4>
             <form class="footer__block-btn">
                  <input id="input" type="email" placeholder="Введите почту">
-                 <button type="submit" id="button_sudmit">Подписаться</button>
+                 <button type="button"  id="button_sudmit">Подписаться</button>
             </form>
         </div>
     </div>
