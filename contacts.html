@@ -41,18 +41,18 @@
                 <h2>У вас есть вопрос?</h2>
                 <label for="name">
                     Ваше имя:
-                    <input type="name" class="modal__input" name="name">
+                    <input autocomplete="off" type="name" class="modal__input" name="name">
                 </label>
                 <label for="email">
                     Ваша почта:*
-                    <input type="email" class="modal__input" name="email">
+                    <input autocomplete="off" type="email" class="modal__input" name="email">
                 </label>
                 <label for="telephone" >
                     Ваш номер телефона:*
-                    <input type="tel" class="modal__input" placeholder="+7 123 4567 09 89" pattern="[0-9][0-9]{3}[0-9]{4}" name="telephone">
+                    <input autocomplete="off" type="tel" class="modal__input" placeholder="+7 123 4567 09 89" pattern="[0-9][0-9]{3}[0-9]{4}" name="telephone">
                 </label>
-                <label for="age">Возраст:  <input class="modal__input" type="number" max="99" min="10"></label>
-                <label for="ask">Как мы можем помочь Вам?*<input class="modal__input" type="text" name="ask" ></label>
+                <label for="age">Возраст:  <input  autocomplete="off"class="modal__input" type="number" max="99" min="10"></label>
+                <label for="ask">Как мы можем помочь Вам?*<input  autocomplete="off"class="modal__input" type="text" name="ask" ></label>
                 <div class="modal__windows__button">
                     <button class="modal__windows__button-1" type="button"  id="close" onclick="modalClose()" >Закрыть</button>
                     <button class="modal__windows__button-2"type="button" id="send" onclick="modalSend()" >Отправть</button>
@@ -73,9 +73,6 @@
         </div>
         <div class="main__header__nav">
             <a href="./catalog.html">Достопримечательности</a>  
-             <a href="./login.html">
-                <button>Вход</button>
-             </a>
         </div>
     </div>
     <div class="burger-menu">
@@ -88,7 +85,6 @@
             <li><a href="./index.html">Главная</a></li>
             <li><a href="./contacts.html">Контакты</a></li>
             <li><a href="./catalog.html">Достопримечательности</a></li>
-            <li><a href="./login.html">Вход</a></li>
             </ul>
         </nav>
     </div>
@@ -101,7 +97,7 @@
         </div>
         <div class="main__contacts__block">
             <div class="main__contacts__block-1">
-                <img src="./img/addres.svg" width="100" alt="">
+                <img src="./contacts/img/addres.svg" width="100" alt="">
                 <div class="main__contacts__block-1-text">
                     <p>Адрес: </p><a href="https://yandex.ru/maps/org/metro_khattyobori/175284870302/?ll=139.786901%2C35.676214&z=16">
                     <h2>Префектура Токио, Токийская префектурная дорога 50 <br>
@@ -109,14 +105,14 @@
                 </div>
             </div>
             <div class="main__contacts__block-1">
-                <img src="./img/watch.svg" width="100" alt="">
+                <img src="./contacts/img/watch.svg" width="100" alt="">
                 <div class="main__contacts__block-1-text">
                     <p>Часы работы:</p>
                     <h2>С 9:00 до 19:00</h2>
                 </div>
             </div>
             <div class="main__contacts__block-1">
-                <img src="./img/telephone.svg" width="100" alt="">
+                <img src="./contacts/img/telephone.svg" width="100" alt="">
                 <div class="main__contacts__block-1-text">
                     <p>Телефон:</p>
                     <h2>+81 8629-4845 <br>
@@ -125,28 +121,28 @@
                 </div>
             </div>
             <div class="main__contacts__block-1">
-                <img src="./img/insta.svg" width="100" alt="">
+                <img src="./contacts/img/insta.svg" width="100" alt="">
                 <div class="main__contacts__block-1-text">
                     <p>Instagram:</p>
                     <a target="_blank" href="https://www.instagram.com/"><h2>tokio_dUIde.Offical</h2></a>
                 </div>
             </div>
             <div class="main__contacts__block-1">
-                <img src="./img/telegram.svg" width="100" alt="">
+                <img src="./contacts/img/telegram.svg" width="100" alt="">
                 <div class="main__contacts__block-1-text">
                     <p>Telegram:</p>
                    <a target="_blank" href="https://web.telegram.org/a/#1125255224"> <h2>@tokio_dUIde</h2></a>
                 </div>
             </div>
             <div class="main__contacts__block-1">
-                <img src="./img/vk.svg" width="100" alt="">
+                <img src="./contacts/img/vk.svg" width="100" alt="">
                 <div class="main__contacts__block-1-text">
                     <p>Вконтаке:</p>
                     <a target="_blank" href="https://vk.com/page-777107_28406709"><h2>Ссылка на страницу в Вконтаке</h2></a>
                 </div>
             </div>
             <div class="main__contacts__block-1">
-                <img src="./img/whatsap.svg"  width="100" alt="">
+                <img src="./contacts/img/whatsap.svg"  width="100" alt="">
                 <div class="main__contacts__block-1-text">
                     <p>WhatsAp:</p>
                     <h2>+7 707 85-54</h2>

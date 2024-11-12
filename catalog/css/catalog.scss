@@ -284,6 +284,7 @@ body{
                 border-bottom: 3px solid white;
                 width: 264px;
                 color: #fff;   
+                
                 @media (max-width:376px) {
                     margin-left: -194px;
                     margin-top: 82px;
@@ -336,7 +337,8 @@ body{
                 font-size: 27px;
             }
             img{
-                max-width: 384px;
+                width: 384px;
+                height: 211px;
                 border-radius: 20px;
                 @media (max-width:376px) {
                     max-width: 280px;
@@ -373,7 +375,8 @@ body{
                 font-size: 27px;
             }
             img{
-                max-width: 384px;
+                width: 384px;
+                height: 211px;
                 border-radius: 20px;
                 @media (max-width:376px) {
                     max-width: 280px;

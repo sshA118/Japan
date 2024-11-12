@@ -45,11 +45,9 @@
             <li><a href="./login.html">Главная</a></li>
             <li><a href="./contacts.html">Контакты</a></li>
             <li><a href="./catalog.html">Достопримечательности</a></li>
-            <li><a href="./login.html">Вход</a></li>
           </ul>
         </nav>
     </div>
-
     <div class="main__header">
         <div class="main__header__top">
             <img src="./index/image/logo.svg" alt="logo">
@@ -57,16 +55,13 @@
         </div>
         <div class="main__header__nav">
             <a href="./contacts.html">Контакты</a>
-             <a href="./login.html">
-                <button>Вход</button>
-             </a>
         </div>
     </div>
     <div class="catalog">
         <div class="catalog__filter">
             <div class="catalog__filter-h2">
                 <h2>Каталог</h2>
-                <input type="text" id="search" placeholder="Введите название достопри">
+                <input type="text" id="search" autocomplete="off" placeholder="Введите название достопри">
             </div>
             <div class="catalog__filter-filter" id="filter">
                 <ul>
@@ -78,13 +73,12 @@
                     <li onclick="filterCatalog('markets')">Уличные рынки</li>
                 </ul>
             </div>
-            
         </div>
         <div class="catalog__card">
             <div class="catalog__card-1"id="close">
-                <div class="catalog__card-1-title" > 
+                <div class="catalog__card-1-title" id="card" > 
                     <h3 id="h0"></h3>
-                    <img src="./catalog/img/meiji.jpg" alt="hram">
+                    <img  id="img0" alt="hram">
                     <h4>Адрес:</h4>
                     <p id="p0"></p>
                 </div>
@@ -93,7 +87,7 @@
             <div class="catalog__card-1" id="d"id="close">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h1"></h3>
-                    <img src="./catalog/img/pic1.jpg" alt="muzei">
+                    <img  id="img1" alt="muzei">
                     <h4>Адрес:</h4>
                     <p id="p1"></p>
                 </div>
@@ -102,7 +96,7 @@
             <div class="catalog__card-1"id="close">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h2"></h3>
-                    <img src="./catalog/img/NezuMuseum.jpg" alt="muzei">
+                    <img id="img2" alt="muzei">
                     <h4>Адрес:</h4>
                     <p id="p2"></p>
                 </div>
@@ -111,7 +105,7 @@
             <div class="catalog__card-1"id="close">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h3"></h3>
-                    <img src="./catalog/img/pic3.jpg" alt="tower">
+                    <img  id="img3" alt="tower">
                     <h4>Адрес:</h4>
                     <p id="p3"></p>
                 </div>
@@ -120,7 +114,7 @@
             <div class="catalog__card-1"id="close">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h4"></h3>
-                    <img src="./catalog/img/pic4.jpg" alt="muzei">
+                    <img  id="img4" alt="muzei">
                     <h4>Адрес:</h4>
                     <p id="p4"></p>
                 </div>
@@ -129,7 +123,7 @@
             <div class="catalog__card-2" id="show">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h5"></h3>
-                    <img src="./catalog/img/caption.jpg" alt="muzei">
+                    <img id="img5" alt="muzei">
                     <h4>Адрес:</h4>
                     <p id="p5"></p>
                 </div>
@@ -138,7 +132,7 @@
             <div class="catalog__card-2" id="show">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h6"></h3>
-                    <img src="./catalog/img/TC1.jpg" alt="muzei">
+                    <img  id="img6" alt="muzei">
                     <h4>Адрес:</h4>
                     <p id="p6"></p>
                 </div>
@@ -147,7 +141,7 @@
             <div class="catalog__card-2" id="show">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h7"></h3>
-                    <img src="./catalog/img/newYorkGrill.jpg" alt="rest">
+                    <img  id="img7" alt="rest">
                     <h4>Адрес:</h4>
                     <p id="p7"></p>
                 </div>
@@ -156,7 +150,7 @@
             <div class="catalog__card-2" id="show">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h8"></h3>
-                    <img src="./catalog/img/misono.jpg" alt="muzei">
+                    <img  id="img8" alt="muzei">
                     <h4>Адрес:</h4>
                     <p id="p8"></p>
                 </div>
@@ -165,7 +159,7 @@
             <div class="catalog__card-2" id="show">
                 <div class="catalog__card-1-title"> 
                     <h3 id="h9"></h3>
-                    <img src="./catalog/img/176192744.jpg" alt="muzei">
+                    <img  id="img9" alt="muzei">
                     <h4>Адрес:</h4>
                     <p id="p9"></p>
                 </div>
@@ -205,10 +199,11 @@
             <h4>Подписка на рассылку</h4>
             <form class="footer__block-btn">
                  <input id="input" type="email" placeholder="Введите почту">
-                 <button type="submit" id="button_sudmit">Подписаться</button>
+                 <button type="button" id="button_sudmit">Подписаться</button>
             </form> 
         </div>
     </div>
 </body>
 <script src="./catalog/catalog.js"></script>
+<script src="./catalog/cardcatalog.js"></script>
 </html>

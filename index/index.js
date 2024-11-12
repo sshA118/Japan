@@ -1,4 +1,10 @@
-
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    },500);
+}
 /////////////////////////////////////////////////////SLAIDER
 let url2 = ['0',
             './index/image/jij.png',
@@ -52,7 +58,7 @@ document.getElementById('close-icon').addEventListener('click', function() {
         menu.classList.remove('active');
 });
 
-///////////////////////////////////////////КНОПКА ПОДПИСАТЬСЯ////////////////////////////////////////////
+///////////////////////////////////////////КНОПКА /ПОДПИСАТЬСЯ///////////////////////////////////////////
 let input = document.getElementById('input')
 function button (){
     button_sudmit.addEventListener("click",() =>{
