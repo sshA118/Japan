@@ -250,29 +250,29 @@ a:hover{
         }    
     }
 }
-.block{
-    display: flex;
-    &__img{
-        display: grid;
-        /* Три колонки */
-        grid-template-columns: auto auto auto;
-        /* Два ряда */
-        grid-template-rows: auto auto;
-        /* Автоматическое размещение в ряд */
-        grid-auto-flow: row;
-        /* Отступы между ячейками */
-        gap: 20px;
-        img{
-            max-width: 300px;
+// .block{
+//     display: flex;
+//     &__img{
+//         display: grid;
+//         /* Три колонки */
+//         grid-template-columns: auto auto auto;
+//         /* Два ряда */
+//         grid-template-rows: auto auto;
+//         /* Автоматическое размещение в ряд */
+//         grid-auto-flow: row;
+//         /* Отступы между ячейками */
+//         gap: 20px;
+//         img{
+//             max-width: 300px;
 
-        }
-        &__3{
-            grid-column: span 2;
+//         }
+//         &__3{
+//             grid-column: span 2;
             
-        }
-    }
+//         }
+//     }
 
-}
+// }
 .footer{
     background-color: #3A3A3A;
     color: #fff;

@@ -1,21 +1,15 @@
 document.addEventListener('DOMContentLoaded',function(){
-    window.onload = function () {
-        document.body.classList.add('loaded_hiding');
-        window.setTimeout(function () {
-          document.body.classList.add('loaded');
-          document.body.classList.remove('loaded_hiding');
-        },500);
-    }
     urlMoc = 'https://672a07666d5fa4901b6f7076.mockapi.io/card/'
     let h3 = document.getElementById('h1')
     let textp = document.getElementById('textP')
     let img = document.getElementById('img')
     let p = document.getElementById(`p`)
+    let jsin = ''
     let request = new XMLHttpRequest();
     request.open("GET", urlMoc);
     request.responseType = "json";
     request.onload = function() {
-        let jsin = textContent = request.response;
+        jsin = textContent = request.response;
         for(let j = 0;j < 10;j++){
             h3 = document.getElementById(`h${j}`)
             textp = document.getElementById(`textP${j}`)
@@ -28,11 +22,17 @@ document.addEventListener('DOMContentLoaded',function(){
         }   
     }
     request.send();
-    
+    document.querySelectorAll('.catalog__card-1').forEach(el =>el.addEventListener('click',()=>{
+        console.log(el);
+        let image = document.querySelector("#image")
+        window.open('./card.html');
+        image.src = jsin[1].img 
+        
+    }))             
   
     document.getElementById('search').addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
-        const cards = document.querySelectorAll('.catalog__card-1,.catalog__card-2');
+        const cards = document.querySelectorAll('.catalog__card-1');
         
         cards.forEach(card => {
             const title = card.querySelector('h3').textContent.toLowerCase();
@@ -44,24 +44,8 @@ document.addEventListener('DOMContentLoaded',function(){
         });
     });
 
-
-
-    document.getElementById('burger-icon').addEventListener('click', function() {
-        const menu = document.getElementById('menu');
-        menu.classList.toggle('active');
-      });
-      
-      document.getElementById('close-icon').addEventListener('click', function() {
-        const menu = document.getElementById('menu');
-        menu.classList.remove('active');
-      });
-      
-
-
-
-
       const itemsPerPage = 4;
-      const items = document.querySelectorAll('.catalog__card-1, .catalog__card-2');
+      const items = document.querySelectorAll('.catalog__card-1');
       const totalPages = Math.ceil(items.length / itemsPerPage);
       let currentPage = 1;
       
@@ -127,9 +111,9 @@ const iten = [
     { title: 'Храм Мэйдзи (Мэйдзи Дзингу)', category: 'temples', content: '...' },
     { title: 'Токийский национальный музей', category: 'museums', content: '...' },
     { title: 'Mori Art Museum(Музей)', category: 'museums', content: '...' },
-    { title: 'Tokyoa Six(Торговые центры)', category: 'malls', content: '...' },
-    { title: 'Amey Midtown(Торговые центры)', category: 'malls', content: '...' },
-    { title: 'Ginzoko Shopping Street(Уличные рынки)', category: 'markets', content: '...' },
+    { title: 'Tokyo Midtown(Торговые центры)', category: 'malls', content: '...' },
+    { title: 'Ginza Six(Торговые центры)', category: 'malls', content: '...' },
+    { title: 'Ameyoko Shopping Street(Уличные рынки)', category: 'markets', content: '...' },
     { title: 'Gotokuji Temple(Уличные рынки)', category: 'markets', content: '...' },
     { title: 'Национальный парк Никко, Тотиги/Гумма/Фукусима', category: 'parks', content: '...' },
     { title: 'Misono(Ресторан)', category: 'restaurants', content: '...' },
@@ -137,7 +121,7 @@ const iten = [
 ];
 
 function filterCatalog(category) {
-    const catalogCards = document.querySelectorAll('.catalog__card-1, .catalog__card-2');
+    const catalogCards = document.querySelectorAll('.catalog__card-1');
     catalogCards.forEach(card => {
         const title = card.querySelector('h3').innerText;
         const item = iten.find(item => item.title === title);

@@ -323,47 +323,6 @@ body {
     display: block;
   }
 }
-.catalog__card-2 {
-  padding: 10px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 20px;
-  display: flex;
-  margin-top: 20px;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-}
-@media (max-width: 376px) {
-  .catalog__card-2 {
-    display: block;
-  }
-}
-.catalog__card-2 h3 {
-  color: #fff;
-  font-size: 27px;
-}
-.catalog__card-2 img {
-  width: 384px;
-  height: 211px;
-  border-radius: 20px;
-}
-@media (max-width: 376px) {
-  .catalog__card-2 img {
-    max-width: 280px;
-  }
-}
-.catalog__card-2 h4 {
-  color: #fff;
-  margin-left: 4%;
-}
-.catalog__card-2-title p {
-  color: #fff;
-  font-family: serif;
-}
-.catalog__card-2 p {
-  color: #fff;
-  margin-left: 2%;
-  margin-top: 5%;
-}
 .catalog__card-1 {
   padding: 10px;
   -webkit-backdrop-filter: blur(10px);

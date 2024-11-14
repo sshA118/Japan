@@ -1,3 +1,5 @@
+
+
 window.onload = function () {
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
@@ -5,8 +7,7 @@ window.onload = function () {
       document.body.classList.remove('loaded_hiding');
     },500);
 }
-/////////////////////////////////////////////////////SLAIDER
-let url2 = ['0',
+const url2 = ['0',
             './index/image/jij.png',
             './index/image/Rainbow.jpg',
             './index/image/Building-Japan-Wallpaper.png',
@@ -20,17 +21,15 @@ let btn = document.getElementById('btn')
 let btn1 = document.getElementById('btn1')
 let main = document.getElementById('main')
 let math = 0
-function per (click){
+
 btn.addEventListener("click",() =>{
         if(btn = 1){    
             let i = 0;
             while (i < 1){
                 math = Math.floor((Math.random() * 7) + 1);
                 i++;
-                main.style.background = `url(${url2[math]})no-repeat center center / cover`      
-                console.log('levo');
-                console.log(url2[math]);
-}
+                main.style.background = `url(${url2[math]})no-repeat center center / cover`    
+            }
         }
     })  
 btn1.addEventListener("click",() =>{
@@ -39,16 +38,11 @@ btn1.addEventListener("click",() =>{
             while (i < 1){
                 math = Math.floor((Math.random() * 5) + 1);
                 i++;
-                console.log(math);
                 main.style.background = `url(${url2[math]})no-repeat center center / cover`
-                console.log('pravo');
-                console.log(url2[math]); 
-
             }
         }
     })  
-}
-per()
+
 document.getElementById('burger-icon').addEventListener('click', function() {
         const menu = document.getElementById('menu');
         menu.classList.toggle('active');
@@ -58,7 +52,6 @@ document.getElementById('close-icon').addEventListener('click', function() {
         menu.classList.remove('active');
 });
 
-///////////////////////////////////////////КНОПКА /ПОДПИСАТЬСЯ///////////////////////////////////////////
 let input = document.getElementById('input')
 function button (){
     button_sudmit.addEventListener("click",() =>{
@@ -83,11 +76,5 @@ ymaps.ready(function () {
     let myPlacemark = new ymaps.Placemark([35.688366, 139.753915], {
        content: 'Токио',
     });
-    let myPlacemarkk = new ymaps.Placemark([35.526344, 140.086820], {
-        content: 'Токио',
-     });
     Map.geoObjects.add(myPlacemark);
 });
-function pustto(){
-    
-}
